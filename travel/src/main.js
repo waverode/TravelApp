@@ -10,10 +10,13 @@ import './assets/styles/reset.css'
 import './assets/styles/border.css'
 // 解决移动端点击会延迟300ms的问题，安装fastclick库
 // import fastClick from 'fastclick'
-
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import style
+import 'swiper/css/swiper.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
