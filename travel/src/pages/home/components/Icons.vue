@@ -88,32 +88,34 @@ export default{
     height : 0
     //百分比是等于父级宽度
     padding-bottom : 50%
-  .icon
-    position: relative
-    float: left
-    width : 25%//百分比是等于父级宽度
-    height: 0
-    padding-bottom : 25%//百分比是等于父级宽度
-    .icon-image
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: .44rem
-      box-sizing: border-box
-      border: 1rem
-      .img-context
-        display: block
-        margin: 0 auto
-        height: 100%
-    .icon-title
-      position: absolute
-      left: 0
-      right: 0
-      bottom: 0
-      line-height: .44rem
-      height: .44rem
-      color: #333
-      text-align: center
-      ellipsis()     
+  .icons
+    margin-top: .2rem
+    .icon
+      position: relative
+      float: left
+      width : 25%//百分比是等于父级宽度
+      height: 0
+      padding-bottom : 25%//百分比是等于父级宽度
+      .icon-image
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: .44rem
+        box-sizing: border-box
+        border: 1rem
+        .img-context
+          display: block
+          margin: 0 auto
+          height: 100%
+      .icon-title
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        line-height: .44rem
+        height: .44rem
+        color: #333
+        text-align: center
+        ellipsis()
 </style>
