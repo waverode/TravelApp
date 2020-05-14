@@ -19,35 +19,35 @@ export default{
   name: 'HomeRecommend',
   data () {
     return {
-          recommendList: [{
-          id: '0001',
-          imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-          title: '天降我才必有用',
-          desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
+      recommendList: [{
+        id: '0001',
+        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
+        title: '天降我才必有用',
+        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
       },
       {
-          id: '0002',
-          imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-          title: '天降我才必有用',
-          desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
+        id: '0002',
+        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
+        title: '天降我才必有用',
+        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
       },
       {
-          id: '0003',
-          imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-          title: '天降我才必有用',
-          desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
+        id: '0003',
+        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
+        title: '天降我才必有用',
+        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
       },
       {
-          id: '0004',
-          imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-          title: '天降我才必有用',
-          desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
+        id: '0004',
+        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
+        title: '天降我才必有用',
+        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
       },
       {
-          id: '0005',
-          imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-          title: '天降我才必有用',
-          desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
+        id: '0005',
+        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
+        title: '天降我才必有用',
+        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
       }
       ]
     }

@@ -1,6 +1,6 @@
 <template>
   <div class='icons'>
-    <swiper>
+    <swiper :options="swiperOptions">
       <swiper-slide v-for='(page, index) of pages' :key='index'>
         <div class="icon" v-for='item of page' :key='item.id'>
           <div class="icon-image">
@@ -18,6 +18,9 @@ export default{
   name: 'HomeIcons',
   data () {
     return {
+      swiperOptions: {
+        loop: true
+      },
       iconList: [{
         id: '0001',
         imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
