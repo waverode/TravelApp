@@ -6,9 +6,11 @@
     <div class='header-input'>
       <span class="iconfont">&#xe633;</span>
       输入书名、作者或关键字</div>
-    <div class='header-right'>登录
-      <span class="iconfont downicon">&#xe67c;</span>
-    </div>
+    <router-link to='/city'>
+      <div class='header-right'>登录
+        <span class="iconfont downicon">&#xe67c;</span>
+      </div>
+    </router-link>
   </header>
 </template>
 
