@@ -2,7 +2,7 @@
     <div>
         <div class="recommend-title">精选主题</div>
         <ul>
-            <li class="item border-bottom" v-for='item of recommendList' :key='item.id'>
+            <li class="item border-bottom" v-for='item of list' :key='item.id'>
                 <div class='image-wrapper'>
                     <img :src="item.imgUrl" class="item-img">
                 </div>
@@ -18,33 +18,11 @@
 <script>
 export default{
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: '//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/8ec38ff3b3c2baf9a4fa520faa4a3543.jpg',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0002',
-        imgUrl: '//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/8ec38ff3b3c2baf9a4fa520faa4a3543.jpg',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0003',
-        imgUrl: '//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/8ec38ff3b3c2baf9a4fa520faa4a3543.jpg',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0004',
-        imgUrl: '//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/8ec38ff3b3c2baf9a4fa520faa4a3543.jpg',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      }
-      ]
     }
   }
 }
@@ -60,7 +38,7 @@ export default{
     .image-wrapper
         overflow hidden
         height 0
-        padding-bottom 40.3%
+        padding-bottom 37.09%
         .item-img
             width 100%
     .item-info

@@ -2,7 +2,7 @@
     <div>
         <div class="recommend-title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for='item of recommendList' :key='item.id'>
+            <li class="item border-bottom" v-for='item of list' :key='item.id'>
                 <img :src="item.imgUrl" class="item-img">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,39 +17,11 @@
 <script>
 export default{
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0002',
-        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0003',
-        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0004',
-        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      },
-      {
-        id: '0005',
-        imgUrl: '//bookcover.yuewen.com/qdbimg/349573/1012902516/150',
-        title: '天降我才必有用',
-        desc: '不减肥就得死！一部被贬仙人在凡间的奋斗史！群号：832476624'
-      }
-      ]
     }
   }
 }
@@ -58,7 +30,6 @@ export default{
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl'
     .recommend-title
-        margin-top : .2rem
         line-height : .8rem
         background : #eee
         text-indent : .2rem
@@ -85,6 +56,7 @@ export default{
             .item-button
                 line-height .44rem
                 background-color #ff9300
+                margin-top .2rem
                 padding 0 .2rem
                 border-radius .06rem
                 color #fff

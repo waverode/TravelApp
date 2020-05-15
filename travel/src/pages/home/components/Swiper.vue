@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <swiper  :options="swiperOptions">
-       <swiper-slide v-for='item of swiperList' :key='item.id'>
+    <swiper  :options="swiperOptions" v-if='showSwiper'>
+       <swiper-slide v-for='item of list' :key='item.id'>
          <img :src="item.imgUrl" />
        </swiper-slide>
        <div class="swiper-pagination" slot="pagination"></div>
@@ -12,6 +12,9 @@
 <script>
 export default{
   name: 'HomeSwiper',
+  props: {
+    list: Array
+  },
   data: function () {
     return {
       swiperOptions: {
@@ -26,6 +29,11 @@ export default{
         id: '0002',
         imgUrl: '//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/2bd34673f82d1cef2cc77b5cc84859a5.jpg'
       }]
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.list.length
     }
   }
 }
