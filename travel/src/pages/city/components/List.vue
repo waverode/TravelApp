@@ -21,7 +21,7 @@
                     </div>
                 </div>
         </div>
-        <div class="aera" v-for='(value, name) of cities' :key='name'>
+        <div class="aera" v-for='(value, name) of cities' :key='name' :ref='name'>
            <div class="title border-topbottom">{{name}}</div>
             <div class="item-list">
                 <div class="item border-bottom" v-for='item of value' :key='item.id'>
@@ -39,10 +39,19 @@ export default{
   name: 'CityList',
   props: {
     cities: Object,
-    hot: Array
+    hot: Array,
+    letter: String
   },
   mounted () {
-    this.srcoll = new Bscroll(this.$refs.wrapper)
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>
